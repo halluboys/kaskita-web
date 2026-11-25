@@ -1,0 +1,14 @@
+{
+  "name": "kaskita-web",
+  "version": "1.4.3",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "deploy": "npm run build && npx wrangler deploy",
+    "dev": "python3 -m http.server 8788 --bind 0.0.0.0 --directory dist",
+    "test": "node --test",
+    "verify-apk": "node scripts/verify-apk.mjs"
+  }
+}
