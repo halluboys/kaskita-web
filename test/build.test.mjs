@@ -9,8 +9,8 @@ execFileSync(process.execPath, ['scripts/build.mjs'], { cwd: root });
 const html = await readFile(`${root}dist/index.html`, 'utf8');
 const release = JSON.parse(await readFile(`${root}release.json`));
 
-test('project-path and custom-domain builds resolve every local asset and anchor', async () => {
-  for (const base of ['https://halluboys.github.io/kaskita-web/', 'https://kaskita.haluboy.org/']) {
+test('custom-domain and subpath builds resolve every local asset and anchor', async () => {
+  for (const base of ['https://kaskita.haluboy.org/', 'https://halluboys.github.io/kaskita-web/']) {
     for (const [, value] of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
       if (value.startsWith('https:')) continue;
       if (value.startsWith('#')) {
@@ -18,7 +18,7 @@ test('project-path and custom-domain builds resolve every local asset and anchor
         continue;
       }
       const resolved = new URL(value, base);
-      assert.ok(resolved.href.startsWith(base), `${value} escapes project path`);
+      assert.ok(resolved.href.startsWith(base), `${value} escapes base path`);
       await access(`${root}dist/${decodeURIComponent(resolved.href.slice(base.length))}`);
     }
   }
@@ -27,7 +27,9 @@ test('project-path and custom-domain builds resolve every local asset and anchor
   const js = await readFile(`${root}dist/app.js`, 'utf8');
   assert.ok(js.includes("fetch('./release.json')"));
   assert.ok(js.includes('`./images/${file}.webp`'));
-  for (const name of ['rekap', 'saldo-dana', 'saldo-persen', 'riwayat', 'laporan-pdf']) await access(`${root}dist/images/${name}.webp`);
+  for (const name of ['beranda', 'kas-pemasukan', 'pinjaman', 'piutang', 'laporan-pdf']) {
+    await access(`${root}dist/images/${name}.webp`);
+  }
 });
 
 test('both CTAs use the public release and match the version, Android requirement and SHA-256', () => {
@@ -39,7 +41,10 @@ test('both CTAs use the public release and match the version, Android requiremen
   assert.ok(!html.includes('href="/download/'));
 });
 
-test('404 can return to the Pages homepage before custom-domain DNS is configured', async () => {
+test('404 returns to root and Cloudflare Worker config binds kaskita.haluboy.org', async () => {
   const page = await readFile(`${root}dist/404.html`, 'utf8');
-  assert.ok(page.includes('href="https://halluboys.github.io/kaskita-web/"'));
+  assert.ok(page.includes('href="/"'));
+  const wrangler = JSON.parse(await readFile(`${root}wrangler.jsonc`, 'utf8'));
+  assert.equal(wrangler.assets.directory, './dist');
+  assert.ok(wrangler.routes.some(route => route.pattern === 'kaskita.haluboy.org' && route.custom_domain === true));
 });

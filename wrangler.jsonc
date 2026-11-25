@@ -1,0 +1,14 @@
+{
+  "name": "kaskita-web",
+  "compatibility_date": "2026-11-25",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "kaskita.haluboy.org",
+      "custom_domain": true
+    }
+  ]
+}
