@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#173b63">
+  <title>KasKita — Kas rapi, pemuda siap.</title>
+  <meta name="description" content="Unduh KasKita untuk Android. Kelola kas pemuda masjid, anggota, borongan, kehadiran, denda, pembagian dana, dan laporan PDF tanpa akun atau internet.">
+  <meta property="og:title" content="KasKita — Kas rapi, pemuda siap.">
+  <meta property="og:description" content="Pembukuan pemuda masjid, dari saldo awal sampai tutup buku. Unduh KasKita {{version}} untuk Android.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kaskita.haluboy.org/">
+  <meta property="og:image" content="https://kaskita.haluboy.org/images/icon.png">
+  <link rel="canonical" href="https://kaskita.haluboy.org/">
+  <link rel="icon" href="./images/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="./images/icon.png">
+  <link rel="preload" href="./fonts/PlusJakartaSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#utama">Langsung ke isi</a>
+  <header class="header">
+    <div class="wrap navigation">
+      <a class="brand" href="#" aria-label="KasKita, beranda"><img src="./images/logo.webp" width="42" height="42" alt=""><span>KasKita<span class="brand-dot">.</span></span></a>
+      <nav aria-label="Navigasi utama"><a href="#fitur">Fitur</a><a href="#tampilan">Tampilan</a><a href="#pasang">Cara pasang</a><a href="#faq">FAQ</a></nav>
+      <a class="button small" href="#unduh">Unduh aplikasi <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="utama">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="line"></span> PEMBUKUAN PEMUDA MASJID</p>
+        <h1 id="hero-title">Kas rapi.<br><span>Pemuda siap.</span></h1>
+        <p class="intro">Biar urusan kas lebih jelas,<br class="desktop-break"> dan kebersamaan tetap jadi yang utama.</p>
+        <p class="hero-description">Dari catatan borongan, kehadiran, dan denda hingga laporan keuangan. Semua dalam satu aplikasi, langsung dari genggaman pengurus.</p>
+        <div class="actions"><a class="button" href="{{downloadUrl}}"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>Unduh untuk Android</a><a class="text-link" href="#tampilan">Lihat aplikasinya <span aria-hidden="true">↗</span></a></div>
+        <p class="release-line">Versi {{version}} <span>·</span> Android {{minimumAndroid}}+ <span>·</span> APK, <span data-size>61 MB</span></p>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-heading"><span>CATAT BERSAMA. KELOLA DENGAN JELAS.</span><span aria-hidden="true">↗</span></div>
+        <div class="hero-phone"><img src="./images/rekap.webp" width="844" height="1500" alt="Screenshot KasKita {{version}}: rekap saldo per dana dengan saldo lama, pemasukan, pengeluaran, dan sisa dana" fetchpriority="high"></div>
+        <div class="visual-note"><span class="note-icon" aria-hidden="true">✓</span><div><strong>Satu catatan, lebih tertata.</strong><span>Saldo tiap dana terlihat jelas.</span></div></div>
+        <div class="visual-footer"><span>KasKita / Android</span><span>01 — REKAP DANA</span></div>
+      </div>
+    </section>
+    <div class="benefit-strip"><div class="wrap benefits"><div><span aria-hidden="true">↳</span><p><strong>Tanpa akun</strong><span>Langsung mulai pembukuan.</span></p></div><div><span aria-hidden="true">◎</span><p><strong>Bisa dipakai offline</strong><span>Data tetap di perangkat Anda.</span></p></div><div><span aria-hidden="true">▤</span><p><strong>Siap jadi laporan</strong><span>Simpan PDF, lalu bagikan.</span></p></div></div></div>
+
+    <section class="section wrap" id="fitur" aria-labelledby="fitur-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / FITUR LENGKAP</p><h2 id="fitur-title">Urus kasnya.<br>Bukan kerumitannya.</h2></div><p>Dirancang untuk alur kerja pengurus pemuda masjid: mulai mencatat, memantau, sampai mempertanggungjawabkan.</p></div>
+      <div class="features">
+        <article class="feature"><span class="feature-number">01</span><h3>Buku & pembagian dana</h3><p>Buka periode buku, tentukan nama dana dan persentasenya. Atur dana yang baru bisa dipakai setelah tutup buku.</p></article>
+        <article class="feature"><span class="feature-number">02</span><h3>Saldo lama, tetap tercatat</h3><p>Masukkan saldo dari luar aplikasi. Bagi sesuai persentase atau isi nominal per dana, lalu lihat riwayat koreksinya.</p></article>
+        <article class="feature"><span class="feature-number">03</span><h3>Anggota & borongan</h3><p>Kelola anggota, pemberi kerja, upah, dan pekerjaan yang berjalan satu atau beberapa hari.</p></article>
+        <article class="feature"><span class="feature-number">04</span><h3>Kehadiran & denda</h3><p>Catat Hadir, Sakit, Izin, atau Alpa per hari kerja. Denda dihitung otomatis; status Sakit tidak dikenai denda.</p></article>
+        <article class="feature"><span class="feature-number">05</span><h3>Kas masuk & keluar</h3><p>Catat penerimaan dan pengeluaran sesuai kategori. Pengeluaran mengurangi dana yang digunakan.</p></article>
+        <article class="feature"><span class="feature-number">06</span><h3>Piutang yang terpisah</h3><p>Bedakan tagihan pemberi kerja dan denda anggota. Pantau pembayaran tanpa mencampurnya dengan uang kas nyata.</p></article>
+        <article class="feature"><span class="feature-number">07</span><h3>Saldo & pindah dana</h3><p>Pantau saldo tiap dana serta perpindahan antar-dana, termasuk rekap saldo awal, masuk, keluar, dan sisanya.</p></article>
+        <article class="feature"><span class="feature-number">08</span><h3>Tutup buku lebih jelas</h3><p>Tinjau pembagian dana sebelum menutup periode. Hasil tutup buku tetap saat piutang lama dibayar kemudian.</p></article>
+        <article class="feature"><span class="feature-number">09</span><h3>Laporan PDF</h3><p>Lihat ringkasan dan grafik. Buat laporan organisasi atau per anggota, simpan PDF, dan bagikan melalui Android.</p></article>
+        <article class="feature"><span class="feature-number">10</span><h3>Cadangan & pindah pengurus</h3><p>Ekspor dan impor file cadangan. Pindahkan pembukuan ke perangkat atau pengurus baru tanpa akun bersama.</p></article>
+        <article class="feature"><span class="feature-number">11</span><h3>PIN & riwayat perubahan</h3><p>Aktifkan kunci PIN aplikasi dan telusuri riwayat perubahan untuk membantu menjaga catatan pembukuan.</p></article>
+        <article class="feature"><span class="feature-number">12</span><h3>Nyaman untuk pengurus</h3><p>Bahasa Indonesia, tema terang dan gelap, serta profil dan logo organisasi yang bisa disesuaikan.</p></article>
+      </div>
+    </section>
+
+    <section class="showcase section" id="tampilan" aria-labelledby="tampilan-title"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">02 / LIHAT LEBIH DEKAT</p><h2 id="tampilan-title">Bukan sekadar janji.<br>Ini tampilannya.</h2></div><p>Screenshot asli dari KasKita {{version}} dengan data contoh. Pilih tampilan untuk melihat detailnya.</p></div>
+      <div class="gallery-tabs" role="group" aria-label="Pilih screenshot fitur">
+        <button type="button" class="selected" data-slide="0" aria-pressed="true">Rekap dana</button><button type="button" data-slide="1" aria-pressed="false">Saldo per dana</button><button type="button" data-slide="2" aria-pressed="false">Bagi persen</button><button type="button" data-slide="3" aria-pressed="false">Riwayat koreksi</button><button type="button" data-slide="4" aria-pressed="false">Laporan PDF</button>
+      </div>
+      <div class="gallery-stage">
+        <div class="gallery-image"><button type="button" id="zoom" aria-label="Perbesar screenshot rekap dana"><img id="gallery-img" src="./images/rekap.webp" width="844" height="1500" alt="Rekap saldo dana di KasKita" loading="lazy"><span>Perbesar gambar <span aria-hidden="true">↗</span></span></button></div>
+        <div class="gallery-copy"><p class="eyebrow" id="slide-number">01 / 05</p><h3 id="slide-title">Setiap dana,<br>jelas sisanya.</h3><p id="slide-description">Lihat saldo lama, dana masuk, dana keluar, dan sisa saldo dalam satu rekap. Lebih mudah menjelaskan posisi kas kepada anggota.</p><div class="gallery-caption"><span aria-hidden="true">↳</span><p id="slide-caption">Rekap dana juga tercantum dalam laporan PDF organisasi.</p></div><p class="screen-note">Screenshot aplikasi · Data contoh</p></div>
+      </div>
+      <noscript><p>JavaScript tidak aktif. Buka screenshot lainnya: <a href="./images/saldo-dana.webp">Saldo per dana</a>, <a href="./images/saldo-persen.webp">Bagi persen</a>, <a href="./images/riwayat.webp">Riwayat koreksi</a>, <a href="./images/laporan-pdf.webp">Laporan PDF</a>.</p></noscript>
+    </div></section>
+
+    <section class="section wrap" id="pasang" aria-labelledby="pasang-title"><div class="section-heading"><div><p class="eyebrow">03 / MULAI DARI SINI</p><h2 id="pasang-title">Unduh. Pasang.<br>Mulai mencatat.</h2></div><p>KasKita tersedia sebagai file APK untuk Android {{minimumAndroid}} atau lebih baru. Belum tersedia untuk iPhone.</p></div>
+      <ol class="steps"><li><span>01</span><h3>Unduh APK</h3><p>Ketuk tombol unduh di situs ini. Tunggu sampai file APK KasKita selesai diunduh.</p></li><li><span>02</span><h3>Pasang di Android</h3><p>Buka file APK dari Unduhan. Jika diminta, izinkan pemasangan dari browser atau pengelola file yang Anda pakai. Setelah selesai, izin ini bisa dimatikan lagi.</p></li><li><span>03</span><h3>Siapkan buku pertama</h3><p>Isi profil organisasi, buka buku, lalu atur anggota dan pembagian dana. Sudah punya cadangan? Impor lewat pengaturan awal.</p></li></ol>
+      <aside class="update-note"><strong>Sudah memakai KasKita?</strong><p>Cadangkan data lewat <b>Pengaturan → Cadangan</b> sebelum memperbarui. Pasang versi baru tanpa menghapus aplikasi lama agar data tetap tersimpan.</p></aside>
+    </section>
+
+    <section class="faq-section section wrap" id="faq" aria-labelledby="faq-title"><div><p class="eyebrow">04 / TANYA JAWAB</p><h2 id="faq-title">Masih penasaran?</h2><p>Hal-hal yang perlu diketahui<br>sebelum mulai mencatat.</p></div><div class="faqs">
+      <details><summary>Perlu internet atau membuat akun?</summary><p>Tidak. Pembukuan KasKita berjalan offline dan tersimpan di perangkat, tanpa akun atau server pembukuan. Internet dibutuhkan untuk mengunduh aplikasi atau mengirim file melalui layanan lain.</p></details>
+      <details><summary>Bisa dipakai banyak admin sekaligus?</summary><p>Belum. KasKita bukan aplikasi sinkronisasi bersama. Gunakan satu perangkat sebagai sumber catatan. Saat berganti pengurus, ekspor cadangan dan impor di perangkat baru.</p></details>
+      <details><summary>Bagaimana agar data tidak hilang?</summary><p>Buat cadangan secara berkala lewat Pengaturan → Cadangan, lalu simpan salinannya di luar perangkat. Menghapus aplikasi atau mereset ponsel bisa menghapus data lokal. Kunci PIN tidak menggantikan cadangan.</p></details>
+      <details><summary>Mengapa memasang lewat file APK?</summary><p>Versi ini dibagikan langsung dari situs KasKita, bukan melalui Play Store. Android dapat meminta izin pemasangan dari sumber ini. Pastikan file berasal dari situs ini; jika Android memblokir pemasangan karena alasan keamanan, jangan abaikan peringatannya.</p></details>
+      <details><summary>Apa yang baru di versi {{version}}?</summary><p>Nama dan ikon baru KasKita, pencatatan saldo lama dari luar aplikasi, pembagian saldo lama sesuai persentase atau per dana, riwayat koreksi saldo lama, dan rekap saldo dana dalam laporan PDF.</p></details>
+      <details><summary>Bisa di iPhone atau langsung di browser?</summary><p>Belum. Situs ini adalah halaman informasi dan unduh. Aplikasi KasKita saat ini hanya tersedia untuk Android {{minimumAndroid}} ke atas.</p></details>
+    </div></section>
+
+    <section class="download-section" id="unduh" aria-labelledby="unduh-title"><div class="wrap download-inner"><div><img src="./images/logo.webp" width="64" height="64" alt="" loading="lazy"><p class="eyebrow">CATATAN KECIL. TANGGUNG JAWAB BESAR.</p><h2 id="unduh-title">Mulai pembukuan<br>yang lebih tertata.</h2><p>KasKita {{version}} · Android {{minimumAndroid}} ke atas · <span data-size>61 MB</span></p></div><div class="download-action"><a class="button light" href="{{downloadUrl}}"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>Unduh KasKita {{version}}</a><p>File APK untuk Android. Unduhan melalui GitHub Releases.</p><details class="checksum"><summary>Periksa keaslian file (SHA-256)</summary><code>{{sha256}}</code><button type="button" id="copy-hash">Salin checksum</button><span id="copy-status" role="status"></span></details></div></div></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#"><img src="./images/logo.webp" width="30" height="30" alt=""><span>KasKita.</span></a><p>Dibuat untuk kebersamaan yang lebih tertata.</p><a href="#utama">Kembali ke atas ↑</a></footer>
+  <dialog id="image-dialog" aria-label="Screenshot fitur diperbesar"><button type="button" class="close-dialog" autofocus>Tutup <span aria-hidden="true">×</span></button><img src="./images/rekap.webp" alt="Rekap saldo dana di KasKita"></dialog>
+</body>
+</html>
