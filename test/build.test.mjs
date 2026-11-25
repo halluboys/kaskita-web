@@ -38,3 +38,8 @@ test('both CTAs use the public release and match the version, Android requiremen
   assert.ok(!html.includes('{{'));
   assert.ok(!html.includes('href="/download/'));
 });
+
+test('404 can return to the Pages homepage before custom-domain DNS is configured', async () => {
+  const page = await readFile(`${root}dist/404.html`, 'utf8');
+  assert.ok(page.includes('href="https://halluboys.github.io/kaskita-web/"'));
+});
