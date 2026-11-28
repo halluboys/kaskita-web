@@ -27,7 +27,7 @@ test('custom-domain and subpath builds resolve every local asset and anchor', as
   const js = await readFile(`${root}dist/app.js`, 'utf8');
   assert.ok(js.includes("fetch('./release.json')"));
   assert.ok(js.includes('`./images/${file}.webp`'));
-  for (const name of ['beranda', 'kas-pemasukan', 'pinjaman', 'piutang', 'laporan-pdf']) {
+  for (const name of ['beranda', 'kas-pemasukan', 'denda-anggota', 'laporan-pdf', 'laporan-pdf-dana']) {
     await access(`${root}dist/images/${name}.webp`);
   }
 });
