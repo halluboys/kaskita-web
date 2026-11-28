@@ -1,6 +1,6 @@
 # Situs unduh KasKita
 
-Landing page publik berbahasa Indonesia untuk KasKita: fitur lengkap, lima screenshot asli versi 1.4.3, galeri dengan zoom, panduan pemasangan, FAQ, dan unduhan APK asli. Disajikan di [https://kaskita.haluboy.org](https://kaskita.haluboy.org) lewat Cloudflare Workers (Static Assets). Kode aplikasi Android tetap privat.
+Landing page publik berbahasa Indonesia untuk KasKita: fitur lengkap, lima screenshot asli versi 1.4.4, galeri dengan zoom, panduan pemasangan, FAQ, dan unduhan APK asli. Disajikan di [https://kaskita.haluboy.org](https://kaskita.haluboy.org) lewat Cloudflare Workers (Static Assets). Kode aplikasi Android tetap privat.
 
 ## Menjalankan lokal
 
@@ -16,12 +16,12 @@ Buka `http://localhost:8788`.
 
 ## APK
 
-APK berada di [GitHub Releases](https://github.com/halluboys/kaskita-web/releases/tag/v1.4.3), bukan di riwayat Git. GitHub menormalkan spasi nama aset menjadi titik (`KasKita.1.4.3.apk`); isi berkas sama persis dengan `KasKita 1.4.3.apk` yang ditandatangani.
+APK berada di [GitHub Releases](https://github.com/halluboys/kaskita-web/releases/tag/v1.4.4), bukan di riwayat Git. GitHub menormalkan spasi nama aset menjadi titik (`KasKita.1.4.4.apk`); isi berkas sama persis dengan `KasKita 1.4.4.apk` yang ditandatangani.
 
 `release.json` adalah sumber versi, URL unduh, ukuran, persyaratan Android, dan SHA-256. Kedua tombol unduh dan checksum dibuat dari metadata yang sama. Untuk memeriksa berkas APK lokal:
 
 ```sh
-npm run verify-apk -- "/path/to/KasKita 1.4.3.apk"
+npm run verify-apk -- "/path/to/KasKita 1.4.4.apk"
 ```
 
 Situs tidak membangun ulang atau menandatangani APK dan tidak menyimpan data pembukuan pengguna. Font Plus Jakarta Sans disertakan sesuai lisensi OFL di `public/fonts/OFL.txt`.
