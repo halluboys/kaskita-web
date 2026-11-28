@@ -1,8 +1,8 @@
 {
-  "version": "1.4.4",
-  "filename": "KasKita 1.4.4.apk",
-  "bytes": 68927159,
-  "sha256": "76a26d83c5a05f0ee0d18fc3749e07407ecfc67ebee64f198425129d7e9a1651",
-  "downloadUrl": "https://github.com/halluboys/kaskita-web/releases/download/v1.4.4/KasKita.1.4.4.apk",
+  "version": "1.4.6",
+  "filename": "KasKita 1.4.6.apk",
+  "bytes": 69107451,
+  "sha256": "6eea2fe86e5886d0a505da918fd706ce71ba6d1edba8d5aa6077a405f94bc480",
+  "downloadUrl": "https://github.com/halluboys/kaskita-web/releases/download/v1.4.6/KasKita.1.4.6.apk",
   "minimumAndroid": "7.0"
 }
